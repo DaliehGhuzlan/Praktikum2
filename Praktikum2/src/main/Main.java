@@ -1,8 +1,7 @@
 package main;
 
 
-import gui.MoebelnAnwendersystem;
-import gui.MoebelnControl;
+import gui.guiStaedtischeEinrichtungen.WarenuebersichtControl;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -10,7 +9,9 @@ public class Main extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) {
-		new MoebelnControl(primaryStage);
+		new gui.guiMoebeln.MoebelnControl(primaryStage);
+		Stage fensterStaedtischeEinrichtungen = new Stage();
+		new WarenuebersichtControl(fensterStaedtischeEinrichtungen);
 	}	
 	
 	public static void main(String[] args){
